@@ -2,19 +2,20 @@
   <div class="all">
     <div class="container">
       <img src="@/assets/Twitter-logo.svg" alt="" />
+
+      <h1>Nos ajude a achar <br />sua conta</h1>
       <div class="text">
-        <h1>Log-In Twitter</h1>
+        <span
+          >Informe o e-mail, número de celular ou nome de usuário associado à
+          sua conta para alterar sua senha.</span
+        >
       </div>
-      <input type="text" placeholder="   Email or username" />
-      <input type="password" placeholder="   Password" />
-      <button onclick="location.href='/home'; ">Entrar</button>
-      <div class="desen">
-        <a href="/forgot"> <p>Esqueceu a Senha?</p> </a>
-      </div>
-      <span>Or</span>
-      <div class="signup">
-        <a href="/cadastro"> <p>Não tem uma conta? Clique aqui!</p></a>
-      </div>
+      <input
+        type="text"
+        placeholder="   E-mail, número de celular ou nome de usuário"
+      />
+      <button onclick="location.href='/home'; ">Avançar</button>
+      <div class="desen"></div>
     </div>
   </div>
 </template>
@@ -28,6 +29,13 @@
   box-sizing: border-box;
   font-family: "Montserrat";
 }
+.text {
+  margin-left: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
 .all {
   background-color: #c1c1c1;
@@ -40,13 +48,15 @@
 }
 
 h1 {
+  font-size: 20pt;
   color: #000000;
   margin-bottom: 10px;
 }
 
 span {
+  font-size: 8pt;
   font-weight: 600;
-  color: #eef;
+  color: #c1c1c1;
 }
 
 img {
@@ -58,11 +68,10 @@ button {
   font-weight: 700;
   background-color: #000000;
   color: #eef;
-  width: 200px;
+  width: 250px;
   height: 50px;
-  margin-top: 20px;
+  margin-top: 150px;
   border-radius: 30px;
-  border: 1px solid #eef;
   cursor: pointer;
 }
 
@@ -72,10 +81,9 @@ button:hover {
   border: solid 1px #000000;
   color: #000000;
 }
-
 input {
   margin-top: 20px;
-  width: 200px;
+  width: 250px;
   height: 50px;
   border-radius: 8px;
   border: solid 1px #c1c1c1;
@@ -91,7 +99,7 @@ input:hover {
 }
 
 .desen span {
-  color: #000000;
+  color: #00acee;
 }
 
 .container {
@@ -107,7 +115,7 @@ input:hover {
 
 a {
   font-size: 8pt;
-  color: #000000;
+  color: #00acee;
   text-decoration: none;
 }
 </style>
